@@ -579,7 +579,7 @@ main { position: relative; z-index: 1; background: var(--bg); }
 }
 @media (max-width: 768px) {
   .piece-frame img {
-    max-height: 300px; /* adjust this value to your liking */
+    max-height: 250px; /* adjust this value to your liking */
     object-fit: cover;
   }
 }
