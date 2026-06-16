@@ -569,10 +569,17 @@ main { position: relative; z-index: 1; background: var(--bg); }
   .hero { min-height: 480px; height: auto; padding: 5rem 0 3rem; }
   .hero-logo { width: 70px; margin-bottom: 1rem; }
   .hero-scroll { margin-top: 1.8rem; }
+
 }
 
 /* Touch devices: remove hover-only affordances, ensure tap targets are comfortable */
 @media (hover: none) {
   .piece-frame::before { opacity: 1; }
   .nav-toggle, .access-form button { min-height: 44px; }
+}
+@media (max-width: 768px) {
+  .piece-frame img {
+    max-height: 300px; /* adjust this value to your liking */
+    object-fit: cover;
+  }
 }
